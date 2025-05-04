@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-container {
+    display: grid;
+    width: 80vh;
+    height: 60vh;
+    background-color: #9BD9EF;
+    border: 3px solid black;
+    padding: 1em;
+    gap: 16px;
+}
+.item {
+    background-color: #A6EC99;
+    border: 2px solid black;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout1 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
+.layout2 {
+    grid-template-columns: 43px 1.2fr 0.8fr 43px;
+    grid-template-rows: 37px 0.8fr 1.2fr;
+    grid-template-areas:
+        "a b c d"
+        "e f g h"
+        "i j k l";
+}
+.layout2 .a {
+    grid-area: a;
+}
+.layout2 .b {
+    grid-area: b;
+}
+.layout2 .c {
+    grid-area: c;
+}
+.layout2 .d {
+    grid-area: d;
+}
+.layout2 .e {
+    grid-area: e;
+}
+.layout2 .f {
+    grid-area: f;
+}
+.layout2 .g {
+    grid-area: g;
+}
+.layout2 .h {
+    grid-area: h;
+}
+.layout2 .i {
+    grid-area: i;
+}
+.layout2 .j {
+    grid-area: j;
+}
+.layout2 .k {
+    grid-area: k;
+}
+.layout2 .l {
+    grid-area: l;
+}
+
+
+.layout3 {
+    grid-template-columns: 0.8fr 1.8fr 76px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "a a b"
+        "c d d"
+        "e f g";
+}
+.layout3 .a {
+    grid-area: a;
+}
+.layout3 .b {
+    grid-area: b;
+}
+.layout3 .c {
+    grid-area: c;
+}
+.layout3 .d {
+    grid-area: d;
+}
+.layout3 .e {
+    grid-area: e;
+}
+.layout3 .f {
+    grid-area: f;
+}
+.layout3 .g {
+    grid-area: g;
+}
+.layout3 .h,
+.layout3 .i,
+.layout3 .j,
+.layout3 .k,
+.layout3 .l {
+    display: none;
+}
+
+.layout4 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "a a a b"
+        "c c d e"
+        "f g h i"
+        "j k l l";
+}
+.layout4 .a {
+    grid-area: a;
+}
+.layout4 .b {
+    grid-area: b;
+}
+.layout4 .c {
+    grid-area: c;
+}
+.layout4 .d {
+    grid-area: d;
+}
+.layout4 .e {
+    grid-area: e;
+}
+.layout4 .f {
+    grid-area: f;
+}
+.layout4 .g {
+    grid-area: g;
+}
+.layout4 .h {
+    grid-area: h;
+}
+.layout4 .i {
+    grid-area: i;
+}
+.layout4 .j {
+    grid-area: j;
+}
+.layout4 .k {
+    grid-area: k;
+}
+.layout4 .l {
+    grid-area: l;
+}
